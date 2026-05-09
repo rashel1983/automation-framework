@@ -1,0 +1,44 @@
+[
+  {
+    "labelkey": "Username Field",
+    "locatorType": "xpath",
+    "locator": "//input[@type='email' or @name='username' or @placeholder='Username']",
+    "navigateTo": "",
+    "description": "Username/email input on mobile login screen"
+  },
+  {
+    "labelkey": "Password Field",
+    "locatorType": "xpath",
+    "locator": "//input[@type='password']",
+    "navigateTo": "",
+    "description": "Password input on mobile login screen"
+  },
+  {
+    "labelkey": "Sign In",
+    "locatorType": "xpath",
+    "locator": "//button[contains(text(),'Sign In') or contains(text(),'Login')]",
+    "navigateTo": "MobileDashboardPage",
+    "description": "Sign In button — navigateTo drives page context to dashboard"
+  },
+  {
+    "labelkey": "Error Message",
+    "locatorType": "xpath",
+    "locator": "//div[contains(@class,'error') or contains(@class,'alert')]",
+    "navigateTo": "",
+    "description": "Error message displayed on failed login"
+  },
+  {
+    "labelkey": "Forgot Password",
+    "locatorType": "xpath",
+    "locator": "//a[contains(text(),'Forgot') or contains(text(),'Reset')]",
+    "navigateTo": "MobileResetPasswordPage",
+    "description": "Forgot password link"
+  },
+  {
+    "labelkey": "Register",
+    "locatorType": "xpath",
+    "locator": "//a[contains(text(),'Register') or contains(text(),'Sign Up')]",
+    "navigateTo": "MobileSignupPage",
+    "description": "Registration link"
+  }
+]

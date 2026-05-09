@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.asrtek</groupId>
+    <artifactId>automation-framework</artifactId>
+    <version>1.0.0</version>
+    <packaging>jar</packaging>
+
+    <properties>
+        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>11</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <cucumber.version>7.14.0</cucumber.version>
+        <selenium.version>4.15.0</selenium.version>
+        <webdrivermanager.version>5.6.3</webdrivermanager.version>
+        <extent.version>5.1.1</extent.version>
+        <jackson.version>2.15.3</jackson.version>
+        <junit.version>4.13.2</junit.version>
+        <!-- Override via: mvn test -Dparallel.thread.count=3 -->
+        <parallel.thread.count>1</parallel.thread.count>
+    </properties>
+
+    <dependencies>
+        <!-- Cucumber -->
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-java</artifactId>
+            <version>${cucumber.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-junit</artifactId>
+            <version>${cucumber.version}</version>
+            <scope>test</scope>
+        </dependency>
+
+        <!-- JUnit 4 -->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>${junit.version}</version>
+            <scope>test</scope>
+        </dependency>
+
+        <!-- Selenium -->
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-java</artifactId>
+            <version>${selenium.version}</version>
+        </dependency>
+
+        <!-- WebDriverManager -->
+        <dependency>
+            <groupId>io.github.bonigarcia</groupId>
+            <artifactId>webdrivermanager</artifactId>
+            <version>${webdrivermanager.version}</version>
+        </dependency>
+
+        <!-- ExtentReports -->
+        <dependency>
+            <groupId>com.aventstack</groupId>
+            <artifactId>extentreports</artifactId>
+            <version>${extent.version}</version>
+        </dependency>
+
+        <!-- Jackson (JSON parsing) -->
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>${jackson.version}</version>
+        </dependency>
+
+        <!-- REST Assured — API test client -->
+        <dependency>
+            <groupId>io.rest-assured</groupId>
+            <artifactId>rest-assured</artifactId>
+            <version>5.3.2</version>
+            <scope>test</scope>
+        </dependency>
+
+        <!-- Appium — Mobile test client (Android + iOS) -->
+        <!-- Exclude Selenium transitive deps — Appium 8.6.0 pulls selenium 4.13.0
+             which conflicts with this project's selenium 4.15.0 and causes
+             HttpCommandExecutor static initializer failure in Chrome tests. -->
+        <dependency>
+            <groupId>io.appium</groupId>
+            <artifactId>java-client</artifactId>
+            <version>8.6.0</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.seleniumhq.selenium</groupId>
+                    <artifactId>*</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+
+        <!-- SLF4J + Logback for structured step logging -->
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>1.7.36</version>
+        </dependency>
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+            <version>1.2.12</version>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>3.1.2</version>
+                <configuration>
+                    <includes>
+                        <!-- UI tests: mvn test -Dtest=TestRunner    -->
+                        <!-- API tests: mvn test -Dtest=ApiTestRunner -->
+                        <!-- Both: mvn test (default)                 -->
+                        <include>**/runner/TestRunner.java</include>
+                        <include>**/runner/ApiTestRunner.java</include>
+                        <include>**/runner/MobileTestRunner.java</include>
+                        <include>**/validation/LocatorValidationTest.java</include>
+                    </includes>
+                    <!--
+                        Parallel execution — driven by parallel.thread.count in config.properties
+                        or overridden at CLI: mvn test -Dparallel.thread.count=3
+
+                        Each thread gets its own Cucumber scenario context via ThreadLocal
+                        in DriverManager and PageContext.
+                    -->
+                    <parallel>methods</parallel>
+                    <threadCount>${parallel.thread.count}</threadCount>
+                    <forkCount>${parallel.thread.count}</forkCount>
+                    <reuseForks>true</reuseForks>
+                </configuration>
+            </plugin>
+  <plugin>
+    <groupId>org.apache.maven.plugins</groupId>
+    <artifactId>maven-surefire-plugin</artifactId>
+    <configuration>
+        <systemPropertyVariables>
+            <base.url>${base.url}</base.url>
+            <env>${env}</env>
+            <browser>${browser}</browser>
+            <headless>${headless}</headless>
+        </systemPropertyVariables>
+    </configuration>
+</plugin>
+        </plugins>
+    </build>
+
+</project>

@@ -1,0 +1,62 @@
+[
+  {
+    "labelkey": "Page Heading",
+    "locator": "//h2[contains(text(), 'Employees')]",
+    "navigateTo": "",
+    "description": "Main heading on the Employees list page"
+  },
+  {
+    "labelkey": "Refresh",
+    "locator": "//button[contains(text(), 'Refresh')]",
+    "navigateTo": "",
+    "description": "Refresh button to reload the employees list"
+  },
+  {
+    "labelkey": "+ Add Employee",
+    "locator": "//a[contains(text(), '+ Add Employee') or contains(text(), 'Add Employee')]",
+    "navigateTo": "EmployeeAddPage",
+    "description": "Button/link to navigate to the Add Employee form"
+  },
+  {
+    "labelkey": "ID",
+    "locator": "//th[contains(text(), 'ID')]",
+    "navigateTo": "",
+    "description": "Sortable ID column header"
+  },
+  {
+    "labelkey": "First Name",
+    "locator": "//th[contains(text(), 'First Name')]",
+    "navigateTo": "",
+    "description": "Sortable First Name column header"
+  },
+  {
+    "labelkey": "Last Name",
+    "locator": "//th[contains(text(), 'Last Name')]",
+    "navigateTo": "",
+    "description": "Sortable Last Name column header"
+  },
+  {
+    "labelkey": "Email",
+    "locator": "//th[contains(text(), 'Email')]",
+    "navigateTo": "",
+    "description": "Sortable Email column header"
+  },
+  {
+    "labelkey": "Hire Date",
+    "locator": "//th[contains(text(), 'Hire Date')]",
+    "navigateTo": "",
+    "description": "Sortable Hire Date column header"
+  },
+  {
+    "labelkey": "Edit",
+    "locator": "//button[contains(text(), 'Edit')][1]",
+    "navigateTo": "EmployeeEditPage",
+    "description": "Edit action button for the first employee row"
+  },
+  {
+    "labelkey": "Delete",
+    "locator": "//button[contains(text(), 'Delete')][1]",
+    "navigateTo": "",
+    "description": "Delete action button for the first employee row"
+  }
+]

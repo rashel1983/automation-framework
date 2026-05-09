@@ -1,0 +1,38 @@
+[
+  {
+    "labelkey": "Username",
+    "locator": "//input[@placeholder='Enter username']",
+    "navigateTo": "",
+    "description": "Username input field on the login form"
+  },
+  {
+    "labelkey": "Password",
+    "locator": "//input[@placeholder='Enter password']",
+    "navigateTo": "",
+    "description": "Password input field on the login form"
+  },
+  {
+    "labelkey": "Sign In",
+    "locator": "//button[contains(., 'Sign In') or contains(., 'Sign in') or contains(., 'Signing In') or contains(., 'Signing in') or contains(., 'LOGIN') or contains(., 'Log In') or contains(., 'Log in')]",
+    "navigateTo": "DashboardPage",
+    "description": "Submit button — navigateTo drives page context automatically after login"
+  },
+  {
+    "labelkey": "Forgot password?",
+    "locator": "//a[contains(text(), 'Forgot password')]",
+    "navigateTo": "ResetPasswordPage",
+    "description": "Link to the reset password page"
+  },
+  {
+    "labelkey": "Register here",
+    "locator": "//a[contains(text(), 'Register here')]",
+    "navigateTo": "SignupPage",
+    "description": "Link to the signup registration page"
+  },
+  {
+    "labelkey": "Error Message",
+    "locator": "//*[contains(@class,'alert') or contains(@class,'error')]",
+    "navigateTo": "",
+    "description": "Error message displayed on failed login"
+  }
+]

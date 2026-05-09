@@ -1,0 +1,68 @@
+[
+  {
+    "labelkey": "Search by name",
+    "locator": "//input[@placeholder='Search by name']",
+    "navigateTo": "",
+    "description": "Search input field on the students list page"
+  },
+  {
+    "labelkey": "Search",
+    "locator": "//button[contains(text(), 'Search')]",
+    "navigateTo": "",
+    "description": "Search submit button on the students list page"
+  },
+  {
+    "labelkey": "Refresh",
+    "locator": "//button[contains(text(), 'Refresh')]",
+    "navigateTo": "",
+    "description": "Refresh button to reload the students list"
+  },
+  {
+    "labelkey": "+ Add Student",
+    "locator": "//a[contains(text(), '+ Add Student') or contains(text(), 'Add Student')]",
+    "navigateTo": "StudentAddPage",
+    "description": "Button/link to navigate to the Add Student form"
+  },
+  {
+    "labelkey": "First Name",
+    "locator": "//th[contains(text(), 'First Name')]",
+    "navigateTo": "",
+    "description": "Sortable First Name column header"
+  },
+  {
+    "labelkey": "Last Name",
+    "locator": "//th[contains(text(), 'Last Name')]",
+    "navigateTo": "",
+    "description": "Sortable Last Name column header"
+  },
+  {
+    "labelkey": "Username",
+    "locator": "//th[contains(text(), 'Username')]",
+    "navigateTo": "",
+    "description": "Sortable Username column header"
+  },
+  {
+    "labelkey": "Active",
+    "locator": "//th[contains(text(), 'Active')]",
+    "navigateTo": "",
+    "description": "Sortable Active column header"
+  },
+  {
+    "labelkey": "Edit",
+    "locator": "//button[contains(text(), 'Edit')][1]",
+    "navigateTo": "StudentEditPage",
+    "description": "Edit action button for the first student row"
+  },
+  {
+    "labelkey": "Delete",
+    "locator": "//button[contains(text(), 'Delete')][1]",
+    "navigateTo": "",
+    "description": "Delete action button for the first student row"
+  },
+  {
+    "labelkey": "Page Heading",
+    "locator": "//h2[contains(text(), 'Students')]",
+    "navigateTo": "",
+    "description": "Main heading on the students list page"
+  }
+]

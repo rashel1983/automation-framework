@@ -1,0 +1,12 @@
+[
+  {
+    "userType": "Admin",
+    "userName": "admin@asr-tek.com",
+    "pass": "pass1"
+  },
+  {
+    "userType": "Test User",
+    "userName": "test@asr-tek.com",
+    "pass": "pass1"
+  }
+]

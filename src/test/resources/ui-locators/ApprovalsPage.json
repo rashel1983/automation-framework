@@ -1,0 +1,62 @@
+[
+  {
+    "labelkey": "Dashboard",
+    "locator": "//*[contains(text(), 'Dashboard')]",
+    "navigateTo": "DashboardPage",
+    "description": "Amazon Home logo - navigates back to homepage"
+  },
+  {
+    "labelkey": "Pending",
+    "locator": "//*[contains(text(), 'Pending')]",
+    "navigateTo": "ApprovalsPage",
+    "description": "Pending tab — shows pending approval requests"
+  },
+  {
+    "labelkey": "Approved",
+    "locator": "//*[contains(text(), 'Approved')]",
+    "navigateTo": "ApprovalsPage",
+    "description": "Approved tab — shows approved accounts"
+  },
+  {
+    "labelkey": "Rejected",
+    "locator": "//*[contains(text(), 'Rejected')]",
+    "navigateTo": "ApprovalsPage",
+    "description": "Rejected tab — shows rejected accounts"
+  },
+  {
+    "labelkey": "Approve",
+    "locator": "//button[contains(text(), 'Approve')][1]",
+    "navigateTo": "",
+    "description": "Approve action button on first row"
+  },
+  {
+    "labelkey": "Reject",
+    "locator": "//button[contains(text(), 'Reject')][1]",
+    "navigateTo": "",
+    "description": "Reject action button on first row"
+  },
+  {
+    "labelkey": "First Name Header",
+    "locator": "//th[contains(text(), 'First Name')]",
+    "navigateTo": "",
+    "description": "Sortable First Name column header"
+  },
+  {
+    "labelkey": "Last Name Header",
+    "locator": "//th[contains(text(), 'Last Name')]",
+    "navigateTo": "",
+    "description": "Sortable Last Name column header"
+  },
+  {
+    "labelkey": "Status Header",
+    "locator": "//th[contains(text(), 'Status')]",
+    "navigateTo": "",
+    "description": "Sortable Status column header"
+  },
+  {
+    "labelkey": "Page Heading",
+    "locator": "//h2[contains(text(), 'Account Requests')]",
+    "navigateTo": "",
+    "description": "Main page heading on the approvals page"
+  }
+]

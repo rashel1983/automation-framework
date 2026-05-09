@@ -1,0 +1,68 @@
+[
+  {
+    "labelkey": "Dashboard",
+    "locator": "//a[contains(@routerlink,'/admin/home') or contains(@href,'/admin/home')]",
+    "navigateTo": "DashboardPage",
+    "description": "Admin sidebar — Dashboard link"
+  },
+  {
+    "labelkey": "Students",
+    "locator": "//a[contains(@routerlink,'/admin/students') or contains(@href,'/admin/students')]",
+    "navigateTo": "StudentsPage",
+    "description": "Admin sidebar — Students link"
+  },
+  {
+    "labelkey": "Approvals",
+    "locator": "//a[contains(@routerlink,'/admin/approvals') or contains(@href,'/admin/approvals')]",
+    "navigateTo": "ApprovalsPage",
+    "description": "Admin sidebar — Approvals link"
+  },
+  {
+    "labelkey": "Admin Permissions",
+    "locator": "//a[contains(@routerlink,'/admin/permissions/admin') or contains(text(),'Admin Permissions')]",
+    "navigateTo": "AdminPermissionsPage",
+    "description": "Admin sidebar — Admin Permissions link"
+  },
+  {
+    "labelkey": "User Permissions",
+    "locator": "//a[contains(@routerlink,'/admin/permissions/app-users') or contains(text(),'User Permissions')]",
+    "navigateTo": "AppUserPermissionsPage",
+    "description": "Admin sidebar — User Permissions link"
+  },
+  {
+    "labelkey": "Reports",
+    "locator": "//a[contains(@routerlink,'/admin/reports') or contains(@href,'/admin/reports')]",
+    "navigateTo": "ReportsPage",
+    "description": "Admin sidebar — Reports link"
+  },
+  {
+    "labelkey": "My Profile",
+    "locator": "//a[contains(@routerlink,'profile') or (contains(text(),'My Profile') and ancestor::nav)]",
+    "navigateTo": "AdminProfilePage",
+    "description": "Admin sidebar — My Profile link"
+  },
+  {
+    "labelkey": "Home",
+    "locator": "//a[contains(@routerlink,'/app/home') or contains(@href,'/app/home')]",
+    "navigateTo": "AppUserHomePage",
+    "description": "App User sidebar — Home link"
+  },
+  {
+    "labelkey": "Employees",
+    "locator": "//a[contains(@routerlink,'/app/employees') or contains(@href,'/app/employees')]",
+    "navigateTo": "EmployeesPage",
+    "description": "App User sidebar — Employees link"
+  },
+  {
+    "labelkey": "Login History",
+    "locator": "//a[contains(@routerlink,'login-history') or contains(text(),'Login History')]",
+    "navigateTo": "LoginHistoryPage",
+    "description": "App User sidebar — Login History link"
+  },
+  {
+    "labelkey": "Logout",
+    "locator": "//button[contains(@class,'btn-logout') or contains(text(),'Logout')]",
+    "navigateTo": "LoginPage",
+    "description": "Header logout button"
+  }
+]

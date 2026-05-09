@@ -1,0 +1,74 @@
+[
+  {
+    "labelkey": "First Name",
+    "locator": "//input[@placeholder='First name']",
+    "navigateTo": "",
+    "description": "First name input on signup form"
+  },
+  {
+    "labelkey": "Last Name",
+    "locator": "//input[@placeholder='Last name']",
+    "navigateTo": "",
+    "description": "Last name input on signup form"
+  },
+  {
+    "labelkey": "Email",
+    "locator": "//input[@placeholder='Email address']",
+    "navigateTo": "",
+    "description": "Email address input on signup form"
+  },
+  {
+    "labelkey": "Phone Number",
+    "locator": "//input[@placeholder='Phone number']",
+    "navigateTo": "",
+    "description": "Phone number input on signup form"
+  },
+  {
+    "labelkey": "ASR-Tek Username",
+    "locator": "//input[@placeholder='Choose a username']",
+    "navigateTo": "",
+    "description": "ASR-Tek username input on signup form"
+  },
+  {
+    "labelkey": "PIN",
+    "locator": "//input[@placeholder='4-digit PIN']",
+    "navigateTo": "",
+    "description": "4-digit PIN input on signup form"
+  },
+  {
+    "labelkey": "Country",
+    "locator": "//input[@placeholder='Country']",
+    "navigateTo": "",
+    "description": "Country input on signup form"
+  },
+  {
+    "labelkey": "Course Join Date",
+    "locator": "//input[@type='date'][contains(@name,'courseJoinDate') or contains(@id,'courseJoinDate')]",
+    "navigateTo": "",
+    "description": "Course join date picker on signup form"
+  },
+  {
+    "labelkey": "Password",
+    "locator": "//input[@placeholder='Password' and @type='password']",
+    "navigateTo": "",
+    "description": "Password input on signup form"
+  },
+  {
+    "labelkey": "Confirm Password",
+    "locator": "//input[@placeholder='Repeat password']",
+    "navigateTo": "",
+    "description": "Confirm password input on signup form"
+  },
+  {
+    "labelkey": "Register",
+    "locator": "//button[contains(text(), 'Register') or contains(text(), 'Registering')]",
+    "navigateTo": "LoginPage",
+    "description": "Submit register button on signup form"
+  },
+  {
+    "labelkey": "Sign In",
+    "locator": "//a[contains(text(), 'Sign In')]",
+    "navigateTo": "LoginPage",
+    "description": "Link back to the login page"
+  }
+]

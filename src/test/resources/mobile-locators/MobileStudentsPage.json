@@ -1,0 +1,30 @@
+[
+  {
+    "labelkey": "Students List",
+    "locatorType": "xpath",
+    "locator": "//table | //mat-list | //div[contains(@class,'student-list')]",
+    "navigateTo": "",
+    "description": "Students list container"
+  },
+  {
+    "labelkey": "Add Student Button",
+    "locatorType": "xpath",
+    "locator": "//button[contains(text(),'Add') or contains(text(),'New Student')]",
+    "navigateTo": "MobileStudentAddPage",
+    "description": "Add new student button"
+  },
+  {
+    "labelkey": "Search Field",
+    "locatorType": "xpath",
+    "locator": "//input[@placeholder='Search' or contains(@placeholder,'search')]",
+    "navigateTo": "",
+    "description": "Search input on students page"
+  },
+  {
+    "labelkey": "No Results Message",
+    "locatorType": "xpath",
+    "locator": "//p[contains(text(),'No results')] | //div[contains(text(),'No students')]",
+    "navigateTo": "",
+    "description": "No results message when search returns empty"
+  }
+]

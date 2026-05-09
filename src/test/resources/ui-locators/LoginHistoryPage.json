@@ -1,0 +1,50 @@
+[
+  {
+    "labelkey": "Page Heading",
+    "locator": "//h2[contains(text(), 'Login History')]",
+    "navigateTo": "",
+    "description": "Main heading on the Login History page"
+  },
+  {
+    "labelkey": "From Date",
+    "locator": "//input[@type='date'][1]",
+    "navigateTo": "",
+    "description": "From date filter on Login History page"
+  },
+  {
+    "labelkey": "To Date",
+    "locator": "//input[@type='date'][2]",
+    "navigateTo": "",
+    "description": "To date filter on Login History page"
+  },
+  {
+    "labelkey": "Search",
+    "locator": "//button[contains(text(), 'Search')]",
+    "navigateTo": "",
+    "description": "Search button to filter login history"
+  },
+  {
+    "labelkey": "Reset",
+    "locator": "//button[contains(text(), 'Reset')]",
+    "navigateTo": "",
+    "description": "Reset button to clear filters and reload login history"
+  },
+  {
+    "labelkey": "Date Header",
+    "locator": "//th[contains(text(), 'Date')]",
+    "navigateTo": "",
+    "description": "Date column header in the login history table"
+  },
+  {
+    "labelkey": "Time Header",
+    "locator": "//th[contains(text(), 'Time')]",
+    "navigateTo": "",
+    "description": "Time column header in the login history table"
+  },
+  {
+    "labelkey": "Status Header",
+    "locator": "//th[contains(text(), 'Status')]",
+    "navigateTo": "",
+    "description": "Status column header in the login history table"
+  }
+]

@@ -1,0 +1,74 @@
+[
+  {
+    "labelkey": "First Name",
+    "locator": "//label[contains(text(),'First Name')]/following-sibling::input | //input[contains(@name,'firstName')]",
+    "navigateTo": "",
+    "description": "First Name input on Add Student form"
+  },
+  {
+    "labelkey": "Last Name",
+    "locator": "//label[contains(text(),'Last Name')]/following-sibling::input | //input[contains(@name,'lastName')]",
+    "navigateTo": "",
+    "description": "Last Name input on Add Student form"
+  },
+  {
+    "labelkey": "Email",
+    "locator": "//input[@type='email'][contains(@name,'email')]",
+    "navigateTo": "",
+    "description": "Email input on Add Student form"
+  },
+  {
+    "labelkey": "PIN",
+    "locator": "//input[contains(@name,'pin')]",
+    "navigateTo": "",
+    "description": "PIN input on Add Student form"
+  },
+  {
+    "labelkey": "Phone",
+    "locator": "//input[contains(@name,'phoneNumber') or contains(@placeholder,'Phone')]",
+    "navigateTo": "",
+    "description": "Phone number input on Add Student form"
+  },
+  {
+    "labelkey": "Batch ID",
+    "locator": "//input[contains(@name,'batchId') or contains(@placeholder,'Batch')]",
+    "navigateTo": "",
+    "description": "Batch ID input on Add Student form"
+  },
+  {
+    "labelkey": "Payment Agreement",
+    "locator": "//input[contains(@name,'paymentAgreement')]",
+    "navigateTo": "",
+    "description": "Payment Agreement input on Add Student form"
+  },
+  {
+    "labelkey": "Referred By",
+    "locator": "//input[contains(@name,'referredBy')]",
+    "navigateTo": "",
+    "description": "Referred By input on Add Student form"
+  },
+  {
+    "labelkey": "State",
+    "locator": "//select[contains(@name,'state')]",
+    "navigateTo": "",
+    "description": "State dropdown on Add Student form"
+  },
+  {
+    "labelkey": "Managed By",
+    "locator": "//input[contains(@name,'managedBy')]",
+    "navigateTo": "",
+    "description": "Managed By input on Add Student form"
+  },
+  {
+    "labelkey": "Save",
+    "locator": "//button[@type='submit' and contains(text(), 'Save')]",
+    "navigateTo": "StudentsPage",
+    "description": "Save button to submit Add Student form"
+  },
+  {
+    "labelkey": "Cancel",
+    "locator": "//a[contains(text(), 'Cancel')]",
+    "navigateTo": "StudentsPage",
+    "description": "Cancel link on Add Student form"
+  }
+]

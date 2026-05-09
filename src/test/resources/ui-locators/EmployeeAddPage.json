@@ -1,0 +1,68 @@
+[
+  {
+    "labelkey": "Page Heading",
+    "locator": "//h2[contains(text(), 'Add Employee')]",
+    "navigateTo": "",
+    "description": "Main heading on the Add Employee page"
+  },
+  {
+    "labelkey": "First Name",
+    "locator": "//input[contains(@name,'firstName')]",
+    "navigateTo": "",
+    "description": "First Name input on Add Employee form"
+  },
+  {
+    "labelkey": "Last Name",
+    "locator": "//input[contains(@name,'lastName')]",
+    "navigateTo": "",
+    "description": "Last Name input on Add Employee form"
+  },
+  {
+    "labelkey": "Email",
+    "locator": "//input[@type='email']",
+    "navigateTo": "",
+    "description": "Email input on Add Employee form"
+  },
+  {
+    "labelkey": "Phone Number",
+    "locator": "//input[contains(@name,'phoneNumber') or contains(@placeholder,'Phone')]",
+    "navigateTo": "",
+    "description": "Phone Number input on Add Employee form"
+  },
+  {
+    "labelkey": "Hire Date",
+    "locator": "//input[@type='date']",
+    "navigateTo": "",
+    "description": "Hire Date picker on Add Employee form"
+  },
+  {
+    "labelkey": "Job",
+    "locator": "//select[contains(@name,'jobId')]",
+    "navigateTo": "",
+    "description": "Job dropdown on Add Employee form"
+  },
+  {
+    "labelkey": "Department",
+    "locator": "//select[contains(@name,'departmentId')]",
+    "navigateTo": "",
+    "description": "Department dropdown on Add Employee form"
+  },
+  {
+    "labelkey": "Salary",
+    "locator": "//input[@type='number' and contains(@name,'salary')]",
+    "navigateTo": "",
+    "description": "Salary input on Add Employee form"
+  },
+  {
+    "labelkey": "Save",
+    "locator": "//button[@type='submit' and contains(text(), 'Save')]",
+    "navigateTo": "EmployeesPage",
+    "description": "Save button to submit Add Employee form"
+  },
+  {
+    "labelkey": "Cancel",
+    "locator": "//a[contains(text(), 'Cancel')]",
+    "navigateTo": "EmployeesPage",
+    "description": "Cancel link on Add Employee form"
+  }
+]

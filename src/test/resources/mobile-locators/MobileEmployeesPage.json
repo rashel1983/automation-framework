@@ -1,0 +1,23 @@
+[
+  {
+    "labelkey": "Employees List",
+    "locatorType": "xpath",
+    "locator": "//table | //mat-list | //div[contains(@class,'employee-list')]",
+    "navigateTo": "",
+    "description": "Employees list container"
+  },
+  {
+    "labelkey": "Search Field",
+    "locatorType": "xpath",
+    "locator": "//input[@placeholder='Search' or contains(@placeholder,'search')]",
+    "navigateTo": "",
+    "description": "Search input on employees page"
+  },
+  {
+    "labelkey": "Add Employee Button",
+    "locatorType": "xpath",
+    "locator": "//button[contains(text(),'Add') or contains(text(),'New Employee')]",
+    "navigateTo": "MobileEmployeeAddPage",
+    "description": "Add new employee button"
+  }
+]

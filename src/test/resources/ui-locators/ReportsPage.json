@@ -1,0 +1,68 @@
+[
+  {
+    "labelkey": "Page Heading",
+    "locator": "//h2[contains(text(), 'Reports')]",
+    "navigateTo": "",
+    "description": "Main heading on the Reports page"
+  },
+  {
+    "labelkey": "User Activity",
+    "locator": "//button[contains(text(), 'User Activity')]",
+    "navigateTo": "",
+    "description": "Tab button to show User Activity report"
+  },
+  {
+    "labelkey": "Visitor Activity",
+    "locator": "//button[contains(text(), 'Visitor Activity')]",
+    "navigateTo": "",
+    "description": "Tab button to show Visitor Activity report"
+  },
+  {
+    "labelkey": "Select User",
+    "locator": "//select[contains(@name,'selectedUser') or contains(@id,'selectedUser')]",
+    "navigateTo": "",
+    "description": "User filter dropdown on User Activity report"
+  },
+  {
+    "labelkey": "From Date",
+    "locator": "//input[@type='date'][1]",
+    "navigateTo": "",
+    "description": "From date filter on reports"
+  },
+  {
+    "labelkey": "To Date",
+    "locator": "//input[@type='date'][2]",
+    "navigateTo": "",
+    "description": "To date filter on reports"
+  },
+  {
+    "labelkey": "Search",
+    "locator": "//button[contains(text(), 'Search')]",
+    "navigateTo": "",
+    "description": "Search button on User Activity report"
+  },
+  {
+    "labelkey": "Action",
+    "locator": "//input[contains(@placeholder, 'GET /api') or contains(@name,'searchAction')]",
+    "navigateTo": "",
+    "description": "Action filter input on Visitor Activity report"
+  },
+  {
+    "labelkey": "OS",
+    "locator": "//input[contains(@placeholder, 'Windows') or contains(@name,'searchOs')]",
+    "navigateTo": "",
+    "description": "OS filter input on Visitor Activity report"
+  },
+  {
+    "labelkey": "Clear",
+    "locator": "//button[contains(text(), 'Clear')]",
+    "navigateTo": "",
+    "description": "Clear filters button on Visitor Activity report"
+  },
+  {
+    "labelkey": "Refresh",
+    "locator": "//button[contains(text(), 'Refresh')]",
+    "navigateTo": "",
+    "description": "Refresh button on Visitor Activity report"
+  }
+]

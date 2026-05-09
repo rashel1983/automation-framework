@@ -1,0 +1,56 @@
+[
+  {
+    "labelkey": "Page Heading",
+    "locator": "//h2[contains(text(), 'My Profile')]",
+    "navigateTo": "",
+    "description": "Main heading on the App User Profile page"
+  },
+  {
+    "labelkey": "Edit",
+    "locator": "//button[contains(text(), 'Edit')]",
+    "navigateTo": "",
+    "description": "Edit button to switch to edit mode on Profile page"
+  },
+  {
+    "labelkey": "First Name",
+    "locator": "//input[contains(@name,'firstName')]",
+    "navigateTo": "",
+    "description": "First Name input on Profile edit form"
+  },
+  {
+    "labelkey": "Last Name",
+    "locator": "//input[contains(@name,'lastName')]",
+    "navigateTo": "",
+    "description": "Last Name input on Profile edit form"
+  },
+  {
+    "labelkey": "Email",
+    "locator": "//input[@type='email']",
+    "navigateTo": "",
+    "description": "Email input on Profile edit form"
+  },
+  {
+    "labelkey": "Phone",
+    "locator": "//input[contains(@name,'phoneNumber')]",
+    "navigateTo": "",
+    "description": "Phone Number input on Profile edit form"
+  },
+  {
+    "labelkey": "Save",
+    "locator": "//button[@type='submit' and contains(text(), 'Save')]",
+    "navigateTo": "",
+    "description": "Save button on Profile edit form"
+  },
+  {
+    "labelkey": "Cancel",
+    "locator": "//button[contains(text(), 'Cancel')]",
+    "navigateTo": "",
+    "description": "Cancel button to exit edit mode on Profile page"
+  },
+  {
+    "labelkey": "Username Label",
+    "locator": "//dt[contains(text(),'Username')]/following-sibling::dd[1]",
+    "navigateTo": "",
+    "description": "Username display value in Profile view mode"
+  }
+]

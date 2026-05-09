@@ -1,0 +1,38 @@
+[
+  {
+    "labelkey": "Page Heading",
+    "locator": "//h2[contains(text(), 'App User Permissions')]",
+    "navigateTo": "",
+    "description": "Main heading on App User Permissions page"
+  },
+  {
+    "labelkey": "Add Employee Checkbox",
+    "locator": "//th[contains(text(),'Add Employee')]/ancestor::table//input[@type='checkbox'][1]",
+    "navigateTo": "",
+    "description": "Add Employee permission checkbox for first user"
+  },
+  {
+    "labelkey": "Update Employee Checkbox",
+    "locator": "//th[contains(text(),'Update Employee')]/ancestor::table//input[@type='checkbox'][1]",
+    "navigateTo": "",
+    "description": "Update Employee permission checkbox for first user"
+  },
+  {
+    "labelkey": "Delete Employee Checkbox",
+    "locator": "//th[contains(text(),'Delete Employee')]/ancestor::table//input[@type='checkbox'][1]",
+    "navigateTo": "",
+    "description": "Delete Employee permission checkbox for first user"
+  },
+  {
+    "labelkey": "Save",
+    "locator": "//button[contains(text(), 'Add') or contains(text(), 'Update')][1]",
+    "navigateTo": "",
+    "description": "Save (Add or Update) button for first user row"
+  },
+  {
+    "labelkey": "Name Header",
+    "locator": "//th[contains(text(), 'Name')][1]",
+    "navigateTo": "",
+    "description": "Name column header in permissions table"
+  }
+]

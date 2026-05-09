@@ -1,0 +1,62 @@
+[
+  {
+    "labelkey": "Dashboard",
+    "locator": "//*[contains(text(), 'Dashboard')]",
+    "navigateTo": "DashboardPage",
+    "description": "Dashboard heading or breadcrumb"
+  },
+  {
+    "labelkey": "Approvals",
+    "locator": "//*[contains(text(), 'Approvals')]",
+    "navigateTo": "ApprovalsPage",
+    "description": "Approvals dashboard card — navigates to ApprovalsPage"
+  },
+  {
+    "labelkey": "Students",
+    "locator": "//*[contains(text(), 'Students')]",
+    "navigateTo": "StudentsPage",
+    "description": "Students dashboard card — navigates to StudentsPage"
+  },
+  {
+    "labelkey": "Reports",
+    "locator": "//*[contains(text(), 'Reports')]",
+    "navigateTo": "ReportsPage",
+    "description": "Reports dashboard card — navigates to ReportsPage"
+  },
+  {
+    "labelkey": "My Profile",
+    "locator": "//a[contains(@routerlink,'admin/profile') or (contains(text(),'My Profile') and ancestor::main)]",
+    "navigateTo": "AdminProfilePage",
+    "description": "My Profile dashboard card — navigates to AdminProfilePage"
+  },
+  {
+    "labelkey": "Admin Permissions",
+    "locator": "//a[contains(@routerlink,'permissions/admin') or (contains(text(),'Admin Permissions') and ancestor::main)]",
+    "navigateTo": "AdminPermissionsPage",
+    "description": "Admin Permissions dashboard card"
+  },
+  {
+    "labelkey": "User Permissions",
+    "locator": "//a[contains(@routerlink,'permissions/app-users') or (contains(text(),'User Permissions') and ancestor::main)]",
+    "navigateTo": "AppUserPermissionsPage",
+    "description": "User Permissions dashboard card"
+  },
+  {
+    "labelkey": "Welcome Message",
+    "locator": "//h1[contains(text(),'Welcome')] | //h2[contains(text(),'Welcome')]",
+    "navigateTo": "",
+    "description": "Welcome greeting on the admin dashboard"
+  },
+  {
+    "labelkey": "Employees",
+    "locator": "//a[contains(@routerlink,'/app/employees') or (contains(text(),'Employees') and ancestor::main)]",
+    "navigateTo": "EmployeesPage",
+    "description": "Employees card on App User home dashboard"
+  },
+  {
+    "labelkey": "Login History",
+    "locator": "//a[contains(@routerlink,'login-history') or (contains(text(),'Login History') and ancestor::main)]",
+    "navigateTo": "LoginHistoryPage",
+    "description": "Login History card on App User home dashboard"
+  }
+]

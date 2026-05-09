@@ -1,0 +1,50 @@
+[
+  {
+    "labelkey": "Page Heading",
+    "locator": "//h2[contains(text(), 'Admin Permissions')]",
+    "navigateTo": "",
+    "description": "Main heading on Admin Permissions page"
+  },
+  {
+    "labelkey": "Add Student Checkbox",
+    "locator": "//th[contains(text(),'Add Student')]/ancestor::table//input[@type='checkbox'][1]",
+    "navigateTo": "",
+    "description": "Add Student permission checkbox for first user"
+  },
+  {
+    "labelkey": "Update Student Checkbox",
+    "locator": "//th[contains(text(),'Update Student')]/ancestor::table//input[@type='checkbox'][1]",
+    "navigateTo": "",
+    "description": "Update Student permission checkbox for first user"
+  },
+  {
+    "labelkey": "Approve Account Checkbox",
+    "locator": "//th[contains(text(),'Approve Account')]/ancestor::table//input[@type='checkbox'][1]",
+    "navigateTo": "",
+    "description": "Approve Account permission checkbox for first user"
+  },
+  {
+    "labelkey": "Reject Account Checkbox",
+    "locator": "//th[contains(text(),'Reject Account')]/ancestor::table//input[@type='checkbox'][1]",
+    "navigateTo": "",
+    "description": "Reject Account permission checkbox for first user"
+  },
+  {
+    "labelkey": "Save",
+    "locator": "//button[contains(text(), 'Add') or contains(text(), 'Update')][1]",
+    "navigateTo": "",
+    "description": "Save (Add or Update) button for first user row"
+  },
+  {
+    "labelkey": "Name Header",
+    "locator": "//th[contains(text(), 'Name')][1]",
+    "navigateTo": "",
+    "description": "Name column header in permissions table"
+  },
+  {
+    "labelkey": "Username Header",
+    "locator": "//th[contains(text(), 'Username')]",
+    "navigateTo": "",
+    "description": "Username column header in permissions table"
+  }
+]

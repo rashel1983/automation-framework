@@ -1,0 +1,68 @@
+[
+  {
+    "labelkey": "Page Heading",
+    "locator": "//h2[contains(text(), 'Edit Employee')]",
+    "navigateTo": "",
+    "description": "Main heading on the Edit Employee page"
+  },
+  {
+    "labelkey": "First Name",
+    "locator": "//input[contains(@name,'firstName')]",
+    "navigateTo": "",
+    "description": "First Name input on Edit Employee form"
+  },
+  {
+    "labelkey": "Last Name",
+    "locator": "//input[contains(@name,'lastName')]",
+    "navigateTo": "",
+    "description": "Last Name input on Edit Employee form"
+  },
+  {
+    "labelkey": "Email",
+    "locator": "//input[@type='email']",
+    "navigateTo": "",
+    "description": "Email input on Edit Employee form"
+  },
+  {
+    "labelkey": "Phone Number",
+    "locator": "//input[contains(@name,'phoneNumber')]",
+    "navigateTo": "",
+    "description": "Phone Number input on Edit Employee form"
+  },
+  {
+    "labelkey": "Hire Date",
+    "locator": "//input[@type='date']",
+    "navigateTo": "",
+    "description": "Hire Date picker on Edit Employee form"
+  },
+  {
+    "labelkey": "Job",
+    "locator": "//select[contains(@name,'jobId')]",
+    "navigateTo": "",
+    "description": "Job dropdown on Edit Employee form"
+  },
+  {
+    "labelkey": "Department",
+    "locator": "//select[contains(@name,'departmentId')]",
+    "navigateTo": "",
+    "description": "Department dropdown on Edit Employee form"
+  },
+  {
+    "labelkey": "Salary",
+    "locator": "//input[@type='number']",
+    "navigateTo": "",
+    "description": "Salary input on Edit Employee form"
+  },
+  {
+    "labelkey": "Update",
+    "locator": "//button[@type='submit' and contains(text(), 'Update')]",
+    "navigateTo": "EmployeesPage",
+    "description": "Update button to submit Edit Employee form"
+  },
+  {
+    "labelkey": "Cancel",
+    "locator": "//a[contains(text(), 'Cancel')]",
+    "navigateTo": "EmployeesPage",
+    "description": "Cancel link on Edit Employee form"
+  }
+]

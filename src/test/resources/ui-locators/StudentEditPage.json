@@ -1,0 +1,50 @@
+[
+  {
+    "labelkey": "First Name",
+    "locator": "//input[contains(@name,'firstName')]",
+    "navigateTo": "",
+    "description": "First Name input on Edit Student form"
+  },
+  {
+    "labelkey": "Last Name",
+    "locator": "//input[contains(@name,'lastName')]",
+    "navigateTo": "",
+    "description": "Last Name input on Edit Student form"
+  },
+  {
+    "labelkey": "Email",
+    "locator": "//input[@type='email']",
+    "navigateTo": "",
+    "description": "Email input on Edit Student form"
+  },
+  {
+    "labelkey": "Phone",
+    "locator": "//input[contains(@name,'phoneNumber')]",
+    "navigateTo": "",
+    "description": "Phone number input on Edit Student form"
+  },
+  {
+    "labelkey": "Username",
+    "locator": "//input[contains(@name,'userName')]",
+    "navigateTo": "",
+    "description": "Read-only username field on Edit Student form"
+  },
+  {
+    "labelkey": "Update",
+    "locator": "//button[@type='submit' and contains(text(), 'Update')]",
+    "navigateTo": "StudentsPage",
+    "description": "Update submit button on Edit Student form"
+  },
+  {
+    "labelkey": "Cancel",
+    "locator": "//a[contains(text(), 'Cancel')]",
+    "navigateTo": "StudentsPage",
+    "description": "Cancel link on Edit Student form"
+  },
+  {
+    "labelkey": "Page Heading",
+    "locator": "//h2[contains(text(), 'Edit Student')]",
+    "navigateTo": "",
+    "description": "Main heading on the Edit Student page"
+  }
+]
