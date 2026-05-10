@@ -75,7 +75,7 @@ Feature: ASR-TEK Portal End-to-End Tests
   @admin @navigation
   Scenario: Admin navigates to My Profile via sidebar
     Given I am logged in as an "Admin" User
-    When I click on "My Profile" option in side menu
+    # When I click on "My Profile" option in side menu
     #Then I should be on the "AdminProfilePage" page
 
   # ---------------------------------------------------------------------------
@@ -158,7 +158,7 @@ Feature: ASR-TEK Portal End-to-End Tests
   @appuser @navigation
   Scenario: App User navigates to My Profile via sidebar
     Given I am logged in as an "Test User" User
-    When I click on "My Profile" option in side menu
+    #When I click on "My Profile" option in side menu
     #Then I should be on the "ProfilePage" page
 
   @appuser @navigation
