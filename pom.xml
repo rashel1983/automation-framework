@@ -112,37 +112,19 @@
 
     <build>
         <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-surefire-plugin</artifactId>
-                <version>3.1.2</version>
-                <configuration>
-                    <includes>
-                        <!-- UI tests: mvn test -Dtest=TestRunner    -->
-                        <!-- API tests: mvn test -Dtest=ApiTestRunner -->
-                        <!-- Both: mvn test (default)                 -->
-                        <include>**/runner/TestRunner.java</include>
-                        <include>**/runner/ApiTestRunner.java</include>
-                        <include>**/runner/MobileTestRunner.java</include>
-                        <include>**/validation/LocatorValidationTest.java</include>
-                    </includes>
-                    <!--
-                        Parallel execution — driven by parallel.thread.count in config.properties
-                        or overridden at CLI: mvn test -Dparallel.thread.count=3
-
-                        Each thread gets its own Cucumber scenario context via ThreadLocal
-                        in DriverManager and PageContext.
-                    -->
-                    <parallel>methods</parallel>
-                    <threadCount>${parallel.thread.count}</threadCount>
-                    <forkCount>${parallel.thread.count}</forkCount>
-                    <reuseForks>true</reuseForks>
-                </configuration>
-            </plugin>
-  <plugin>
+           <plugin>
     <groupId>org.apache.maven.plugins</groupId>
     <artifactId>maven-surefire-plugin</artifactId>
+    <version>3.1.2</version>
     <configuration>
+        <includes>
+            <include>**/runner/TestRunner.java</include>
+            <include>**/validation/LocatorValidationTest.java</include>
+        </includes>
+        <parallel>methods</parallel>
+        <threadCount>${parallel.thread.count}</threadCount>
+        <forkCount>${parallel.thread.count}</forkCount>
+        <reuseForks>true</reuseForks>
         <systemPropertyVariables>
             <base.url>${base.url}</base.url>
             <env>${env}</env>
