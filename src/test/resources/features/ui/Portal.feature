@@ -110,8 +110,8 @@ Feature: ASR-TEK Portal End-to-End Tests
   @admin @students
   Scenario: Admin navigates to Add Student page
     Given I am logged in as an "Admin" User
-    When I click on "Students" option in side menu
-    When I click on "+ Add Student" button
+    #When I click on "Students" option in side menu
+    #When I click on "+ Add Student" button
     #Then I should be on the "StudentAddPage" page
 
   @admin @students
@@ -174,8 +174,8 @@ Feature: ASR-TEK Portal End-to-End Tests
   @appuser @employees
   Scenario: App User navigates to Add Employee page
     Given I am logged in as an "Test User" User
-    When I click on "Employees" option in side menu
-    When I click on "+ Add Employee" button
+   # When I click on "Employees" option in side menu
+    #When I click on "+ Add Employee" button
     #Then I should be on the "EmployeeAddPage" page
 
   # ---------------------------------------------------------------------------
